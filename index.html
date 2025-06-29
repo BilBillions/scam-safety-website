@@ -90,28 +90,26 @@
   </section>
 
   <!-- Contact-->
-   <section id="contact" class="py-12 bg-blue-100">
-  <div class="container mx-auto px-4 max-w-3xl">
-    <h2 class="text-2xl font-bold mb-6 text-center">Contact Me</h2>
-    <p class="text-center mb-8">Need help or want to book a session? Reach out. I’ll get back to you within 24 hours.</p>
-    <form action="mailto:bigbil09000@gmail.com" method="POST" enctype="text/plain" class="bg-white p-6 rounded shadow">
-      <div class="mb-4">
-        <label class="block font-semibold mb-2">Your Name</label>
-        <input type="text" name="name" required class="w-full border border-gray-300 px-4 py-2 rounded" />
-      </div>
-      <div class="mb-4">
-        <label class="block font-semibold mb-2">Your Email</label>
-        <input type="email" name="email" required class="w-full border border-gray-300 px-4 py-2 rounded" />
-      </div>
-      <div class="mb-4">
-        <label class="block font-semibold mb-2">Message</label>
-        <textarea name="message" rows="4" class="w-full border border-gray-300 px-4 py-2 rounded"></textarea>
-      </div>
-      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Send Message</button>
-    </form>
-  </div>
-</section>
+   <form action="https://formspree.io/f/xzzgozob" method="POST" class="space-y-4">
+  <label class="block">
+    <span class="text-gray-700">Your Name</span>
+    <input type="text" name="name" required class="w-full p-2 border rounded" />
+  </label>
 
+  <label class="block">
+    <span class="text-gray-700">Your Email</span>
+    <input type="email" name="email" required class="w-full p-2 border rounded" />
+  </label>
+
+  <label class="block">
+    <span class="text-gray-700">Your Message</span>
+    <textarea name="message" rows="5" required class="w-full p-2 border rounded"></textarea>
+  </label>
+
+  <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+    Send Message
+  </button>
+</form>
 <a href="tel:+12139281578" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full mt-6 inline-block">Book a Free Scam Check</a>
   <!-- Footer -->
   <footer class="bg-white text-center py-6 text-sm text-gray-500">
