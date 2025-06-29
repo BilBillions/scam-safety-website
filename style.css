@@ -1,0 +1,140 @@
+/* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0e7ee;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #f0e1e1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1f2937;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+.section {
+  padding: 3rem 1rem;
+}
+
+.light-bg {
+  background-color: #a2c5e8;
+}
+
+.home-section {
+  background-color: #abc7eb;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.headline {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1rem auto;
+  display: block;
+}
+
+.mission {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Services */
+.services-list {
+  list-style: none;
+  padding: 0;
+}
+
+.services-list li {
+  background-color: #d01515;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Forms */
+.email-form,
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.email-form input,
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.email-form button,
+.contact-form button {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.email-form button:hover,
+.contact-form button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Booking link */
+.booking-link a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+  border-top: 1px solid #e5e7eb;
+}
