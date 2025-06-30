@@ -129,7 +129,14 @@
   <footer class="bg-white text-center py-6 text-sm text-gray-500">
     &copy; 2025 Stay Safe Online. All rights reserved.
   </footer>
-  
+  <script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
 </body>
 <script src="js/main.js"></script>
 </html>
