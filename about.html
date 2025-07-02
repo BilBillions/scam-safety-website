@@ -1,61 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LDTK1SKWEW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LDTK1SKWEW');
-</script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About</title>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet Bil Miracle, your Scam Safety Coach, dedicated to protecting you from online dating scams and phishing fraud.">
+  <meta name="keywords" content="scam safety coach, online dating scams, phishing scams, internet safety">
+  <title>About | Scam Safety Coach</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    body.menu-open { overflow: hidden; }
+    #mobile-menu a:hover { background-color: #e3f2fd; color: #1e40af; }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-LDTK1SKWEW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LDTK1SKWEW');
+  </script>
   <!-- MailerLite Universal -->
-<script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+  <script async defer src="https://assets.mailerlite.com/js/universal.js">
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments);},l=d.createElement(e),l.async=1,l.src=u,n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
     ml('account', '1632073');
-</script>
-<!-- End MailerLite Universal -->
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Bil Miracle",
+      "jobTitle": "Scam Safety Coach",
+      "url": "https://scamsafetycoach.online",
+      "sameAs": ["https://calendly.com/bigbil09000"]
+    }
+  </script>
 </head>
 <body class="bg-gray-50 text-gray-900">
   <header class="bg-white shadow">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold">Scam Safety Coach</h1>
-      <nav>
-        <a href="index.html" class="mr-4 text-blue-600">Home</a>
-        <a href="blog.html" class="mr-4 text-blue-600">Blog</a>
-        <a href="guide.html" class="mr-4 text-blue-600">Guide</a>
-        <a href="contact.html" class="text-blue-600">Contact</a>
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="img/logo.webp" alt="Scam Safety Coach Logo" class="w-29 h-20" loading="lazy">
+        <span class="text-xl font-bold text-gray-900">Stay Safe Online</span>
+      </a>
+      <nav class="hidden md:block">
+        <ul class="flex space-x-4">
+          <li><a href="index.html" class="hover:underline">Home</a></li>
+          <li><a href="about.html" class="font-semibold text-blue-600">About</a></li>
+          <li><a href="services.html" class="hover:underline">Services</a></li>
+          <li><a href="guide.html" class="hover:underline">Free Guide</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact</a></li>
+          <li><a href="blog.html" class="hover:underline">Blog</a></li>
+          <li><a href="testimonials.html" class="hover:underline">Testimonials</a></li>
+        </ul>
       </nav>
+      <button id="menu-btn" class="md:hidden focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-600" aria-label="Toggle menu" aria-expanded="false">
+        <svg class="h-8 w-8 text-gray-700 hamburger-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg class="h-8 w-8 text-gray-700 close-icon hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
     </div>
+    <nav id="mobile-menu" class="md:hidden bg-white border-t border-gray-200 hidden" aria-label="Mobile menu">
+      <ul class="flex flex-col space-y-1 p-4 text-gray-700 font-medium">
+        <li><a href="index.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Home</a></li>
+        <li><a href="about.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700 font-semibold">About</a></li>
+        <li><a href="services.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Services</a></li>
+        <li><a href="guide.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Free Guide</a></li>
+        <li><a href="contact.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Contact</a></li>
+        <li><a href="blog.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Blog</a></li>
+        <li><a href="testimonials.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Testimonials</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main class="container mx-auto px-4 py-12 max-w-3xl">
+    <h1 class="text-3xl font-bold text-center mb-6">About Bil Miracle</h1>
     <section class="text-center mb-12">
-      <img src="img/IMG_1516.png" alt="Profile" class="mx-auto rounded-full w-40 h-40 mb-4"> 
-      <h2 class="text-3xl font-bold">About Me</h2>
-      <p class="text-gray-600 mt-2">Your Scam Safety Advocate</p>
+      <img src="img/IMG_1516.webp" alt="Bil Miracle, Scam Safety Coach" class="mx-auto rounded-full w-40 h-40 mb-4" loading="lazy">
+      <h2 class="text-2xl font-bold">Your Scam Safety Advocate</h2>
+      <p class="text-gray-600 mt-2">Protecting You from Online Dating Scams and Phishing Fraud</p>
     </section>
+    <section class="space-y-6 text-lg"><p>Hi, I’m <strong>Bil Miracle</strong>, your Scam Safety Coach and founder of <a href="https://scamsafetycoach.online" class="text-blue-600 underline">ScamSafetyCoach.online</a>.</p>
 
-    <section class="space-y-6 text-lg">
-      <p> I'm someone who’s been behind the curtain and now I’ve stepped into the light to help others avoid being hurt online.</p>
+        <p>My journey began in a place I’m not proud of: I was once involved in online scams. It’s difficult to admit — but it’s part of my story. And it’s the reason I’m here today.</p>
 
-      <p>My journey started in a place I’m not proud of: I once scammed people online. But through deep reflection, self-education, and the decision to change, I’ve turned that experience into a mission to protect others.</p>
+        <p>Years ago, I participated in romance scams, phishing schemes, and fake investment setups. But one day, everything changed. I thought of my own mother — and asked myself, <em>“How would I feel if someone did to her what I was doing to others?”</em></p>
 
-      <p>I now teach people how to spot the tactics scammers use, how to protect themselves emotionally and financially, and how to support loved ones who may be at risk. My story is real, and so is my commitment to change.</p>
+        <p>That moment shook me. It made me stop, reflect, and choose a different path.</p>
 
-      <p>I believe transformation is possible, and every one of us can rewrite our path. This site is a place of awareness, truth, and healing. Thank you for being here.</p>
+        <p>Through deep self-reflection and a commitment to change, I walked away from that world — and turned my experience into a mission to protect others from the very harm I once caused.</p>
+
+        <p>Today, I teach people how to recognize the emotional and psychological tactics scammers use — especially in online dating, phishing, and crypto fraud. My goal is to empower you with knowledge so you can protect yourself emotionally, financially, and confidently support your loved ones who may be at risk.</p>
+
+        <p>This site is more than just information. It’s a space for <strong>awareness, truth, and healing</strong> — built on real experience and sincere purpose.</p>
+
+        <p>If you're reading this, you've already taken a powerful step toward safety. You're not alone anymore. I’ve lived both sides of the story — and I’m here to guide you through it.</p>
+
+        <p class="font-semibold text-lg">Let’s stay safe — together.</p>
+        <p class="text-right font-bold">– Bil Miracle</p>
+      <p class="text-center"><a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Get in Touch</a></p>
     </section>
   </main>
 
-  <footer class="text-center py-6 text-sm text-gray-500">
-    © 2025 Scam Safety Coach. All rights reserved.
+  <footer class="bg-white text-center py-6 text-sm text-gray-500">
+    © 2025 Stay Safe Online. All rights reserved.
   </footer>
+  <script src="main.js"></script>
 </body>
 </html>
