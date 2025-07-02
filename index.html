@@ -1,14 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LDTK1SKWEW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LDTK1SKWEW');
-</script>
+<script async defer src="https://www.googletagmanager.com/gtag/js?id=G-LDTK1SKWEW"></script>
+<script async defer src="https://assets.mailerlite.com/js/universal.js"></script>
 <meta name="google-site-verification" content="pwNJe6q9YT773Z1jxlGHx-rOF1lFfmjYJ3hJ9nEZCY4" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,29 +16,13 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io 2/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
   <style>
-    <script>
-   menuBtn.addEventListener("click", () => {
-  const isExpanded = menuBtn.getAttribute("aria-expanded") === "true";
-  menuBtn.setAttribute("aria-expanded", !isExpanded);
-  mobileMenu.classList.toggle("hidden");
-  document.body.classList.toggle("menu-open");
-  menuBtn.querySelector(".hamburger-icon").classList.toggle("hidden");
-  menuBtn.querySelector(".close-icon").classList.toggle("hidden");
-});
-  </script>
+  
     /* Hide scrollbar in mobile nav when open */
     body.menu-open {
       overflow: hidden;
     }
   </style>
   <!-- MailerLite Universal -->
-<script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '1632073');
-</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -76,12 +54,26 @@
         </ul>
       </nav>
       <!-- Hamburger Button (visible on mobile) -->
-       <button id="menu-btn" class="md:hidden focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-600" aria-label="Toggle menu" aria-expanded="false">
-  <svg class="h-8 w-8 text-gray-700 hamburger-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-  </svg>
-  <svg class="h-8 w-8 text-gray-700 close-icon hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+     <button
+  id="menu-btn"
+  class="md:hidden focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-600"
+  aria-label="Toggle menu"
+  aria-expanded="false"
+>
+  <svg
+    class="h-8 w-8 text-gray-700"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    aria-hidden="true"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M4 6h16M4 12h16M4 18h16"
+    />
   </svg>
 </button>
     </div>
@@ -206,12 +198,35 @@
     </div>
   </div>
 </section>
-<a href="mailto:bil@scamsafetycoach.online" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full mt-6 inline-block">Book a $50 private session, I’ll review your case and tell you the truth within 24 hours.</a>
-  <!-- Footer -->
+<a href="mailto:bil@scamsafetycoach.online" class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full font-semibold mt-6 inline-block">Book a $50 Private Session</a>  <!-- Footer -->
   <footer class="bg-white text-center py-6 text-sm text-gray-500">
     &copy; 2025 Stay Safe Online. All rights reserved.
   </footer>
   
 </body>
+   <script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn.addEventListener("click", () => {
+    const isExpanded = menuBtn.getAttribute("aria-expanded") === "true";
+    menuBtn.setAttribute("aria-expanded", !isExpanded);
+    mobileMenu.classList.toggle("hidden");
+    document.body.classList.toggle("menu-open");
+    menuBtn.querySelector(".hamburger-icon").classList.toggle("hidden");
+    menuBtn.querySelector(".close-icon").classList.toggle("hidden");
+  });
+
+  // Close mobile menu when clicking a link (optional)
+  mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+      menuBtn.setAttribute("aria-expanded", false);
+      document.body.classList.remove("menu-open");
+      menuBtn.querySelector(".hamburger-icon").classList.remove("hidden");
+      menuBtn.querySelector(".close-icon").classList.add("hidden");
+    });
+  });
+</script>
 <script src="main.js"></script>
 </html>
