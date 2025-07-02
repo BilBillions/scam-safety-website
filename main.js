@@ -1,50 +1,55 @@
-// Handle email form submission for the Free Guide
-document.addEventListener('DOMContentLoaded', () => {
-  const emailForm = document.querySelector('.email-form');
-  const contactForm = document.querySelector('.contact-form');
+// Mobile Menu Toggle
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
 
-  if (emailForm) {
-    emailForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const emailInput = emailForm.querySelector('input[type="email"]');
-      const email = emailInput.value.trim();
+if (menuBtn && mobileMenu) {
+  menuBtn.addEventListener("click", () => {
+    const isExpanded = menuBtn.getAttribute("aria-expanded") === "true";
+    menuBtn.setAttribute("aria-expanded", !isExpanded);
+    mobileMenu.classList.toggle("hidden");
+    document.body.classList.toggle("menu-open");
+    menuBtn.querySelector(".hamburger-icon").classList.toggle("hidden");
+    menuBtn.querySelector(".close-icon").classList.toggle("hidden");
+  });
 
-      if (validateEmail(email)) {
-        alert("Thank you! The guide will be sent to your email.");
-        emailInput.value = "";
-        // Here you can integrate with your email provider like Mailchimp or ConvertKit
-      } else {
-        alert("Please enter a valid email address.");
-      }
+  mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+      menuBtn.setAttribute("aria-expanded", false);
+      document.body.classList.remove("menu-open");
+      menuBtn.querySelector(".hamburger-icon").classList.remove("hidden");
+      menuBtn.querySelector(".close-icon").classList.add("hidden");
     });
-  }
+  });
+}
 
-  if (contactForm) {
+// Client-side form validation for contact forms
+document.addEventListener('DOMContentLoaded', () => {
+  const contactForms = document.querySelectorAll('.contact-form');
+
+  contactForms.forEach((contactForm) => {
     contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
-
-      const name = contactForm.querySelector('input[placeholder=\"Your Name\"]').value.trim();
-      const email = contactForm.querySelector('input[type=\"email\"]').value.trim();
+      const name = contactForm.querySelector('input[placeholder*="Name"]').value.trim();
+      const email = contactForm.querySelector('input[type="email"]').value.trim();
       const message = contactForm.querySelector('textarea').value.trim();
 
-      if (!name || !email || !message) {
-        alert(\"Please fill in all fields.\");
+      if (!email || !message) {
+        alert("Please fill in all required fields.");
         return;
       }
 
       if (!validateEmail(email)) {
-        alert(\"Please enter a valid email address.\");
+        alert("Please enter a valid email address.");
         return;
       }
 
-      // Simulate form submission
-      alert(\"Thank you for reaching out. I'll get back to you soon!\");
-      contactForm.reset();
+      // Allow Formspree to handle submission
+      contactForm.submit();
     });
-  }
+  });
 });
 
-// Email validation
 function validateEmail(email) {
   const re = /^(([^<>()[\\]\\\\.,;:\\s@\"]+(\\.[^<>()[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@(([^<>()[\\]\\\\.,;:\\s@\"]+\\.)+[^<>()[\\]\\\\.,;:\\s@\"]{2,})$/i;
   return re.test(email);
