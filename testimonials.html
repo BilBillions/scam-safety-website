@@ -1,63 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Stay Safe Online</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read testimonials from clients helped by Scam Safety Coach to avoid online dating scams.">
+  <meta name="keywords" content="scam safety coach, online dating scams, testimonials, phishing scams">
+  <title>Testimonials | Scam Safety Coach</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    body.menu-open { overflow: hidden; }
+    #mobile-menu a:hover { background-color: #e3f2fd; color: #1e40af; }
+  </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
-
-  <!-- Header -->
-  <header class="bg-white shadow-md">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <a href="index.html" class="text-xl font-bold text-blue-700">Stay Safe Online</a>
-      <nav class="space-x-4 hidden md:flex">
-        <a href="index.html" class="hover:underline">Home</a>
-        <a href="about.html" class="hover:underline">About</a>
-        <a href="services.html" class="hover:underline">Services</a>
-        <a href="testimonials.html" class="text-blue-600 font-semibold">Testimonials</a>
-        <a href="contact.html" class="hover:underline">Contact</a>
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="img/logo.webp" alt="Scam Safety Coach Logo" class="w-29 h-20" loading="lazy">
+        <span class="text-xl font-bold text-gray-900">Stay Safe Online</span>
+      </a>
+      <nav class="hidden md:block">
+        <ul class="flex space-x-4">
+          <li><a href="index.html" class="hover:underline">Home</a></li>
+          <li><a href="about.html" class="hover:underline">About</a></li>
+          <li><a href="services.html" class="hover:underline">Services</a></li>
+          <li><a href="guide.html" class="hover:underline">Free Guide</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact</a></li>
+          <li><a href="blog.html" class="hover:underline">Blog</a></li>
+          <li><a href="testimonials.html" class="font-semibold text-blue-600">Testimonials</a></li>
+        </ul>
       </nav>
+      <button id="menu-btn" class="md:hidden focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-600" aria-label="Toggle menu" aria-expanded="false">
+        <svg class="h-8 w-8 text-gray-700 hamburger-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg class="h-8 w-8 text-gray-700 close-icon hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
     </div>
+    <nav id="mobile-menu" class="md:hidden bg-white border-t border-gray-200 hidden" aria-label="Mobile menu">
+      <ul class="flex flex-col space-y-1 p-4 text-gray-700 font-medium">
+        <li><a href="index.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Home</a></li>
+        <li><a href="about.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">About</a></li>
+        <li><a href="services.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Services</a></li>
+        <li><a href="guide.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Free Guide</a></li>
+        <li><a href="contact.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Contact</a></li>
+        <li><a href="blog.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Blog</a></li>
+        <li><a href="testimonials.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700 font-semibold">Testimonials</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Existing content continues here... -->
-
-  <!-- Testimonials -->
   <section class="py-12 bg-white">
     <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8">What People Are Saying</h2>
-
+      <h1 class="text-4xl font-bold text-center mb-8">What People Are Saying</h1>
+      <h2 class="text-2xl font-bold text-center mb-8">Client Testimonials</h2>
       <div class="bg-blue-50 p-6 rounded-lg shadow-md mb-6">
-        <p class="text-lg italic">"I was unsure about someone I met online. Bil helped me see the red flags I’d missed. His guidance saved me thousands of euros — and heartbreak."</p>
+        <p class="text-lg italic">"Bil’s advice on spotting phishing scams saved me thousands of euros — and heartbreak."</p>
         <p class="mt-4 font-semibold text-right">— Sofia M., Germany</p>
       </div>
-
       <div class="bg-blue-50 p-6 rounded-lg shadow-md mb-6">
         <p class="text-lg italic">"I didn’t know who to trust after being scammed. Bil didn’t judge — he listened and helped me feel in control again. Thank you!"</p>
         <p class="mt-4 font-semibold text-right">— Lisa A., Sweden</p>
       </div>
-
       <div class="bg-blue-50 p-6 rounded-lg shadow-md mb-6">
-        <p class="text-lg italic">"The one-on-one session gave me peace of mind. Bil reviewed all my messages and explained what was real and what wasn’t. Worth every cent."</p>
+        <p class="text-lg italic">"I was unsure about someone I met online. Bil helped me see the red flags I’d missed. His guidance saved me thousands of euros — and heartbreak."</p>
         <p class="mt-4 font-semibold text-right">— Mark T., Canada</p>
       </div>
-
       <div class="text-center mt-10 space-y-4">
         <a href="services.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition">Get Help Now</a>
         <br>
-       <!-- <a href="#submit-story" class="inline-block text-blue-600 underline">Submit Your Story</a>-->
       </div>
     </div>
   </section>
 
-  <!-- Submit Your Story Form -->
   <section id="submit-story" class="py-12 bg-gray-100">
     <div class="max-w-2xl mx-auto px-4">
       <h2 class="text-2xl font-bold text-center mb-6">Share Your Experience</h2>
-      <p class="text-center mb-6">Have you worked with me or learned something from the free guide? I'd love to hear your story. Your words may help someone else feel less alone and more protected.</p>
-
+      <p class="text-center mb-6">Have you worked with me or learned from the free guide? Share your story to help others feel protected.</p>
       <form action="https://formspree.io/f/xzzgozob" method="POST" class="space-y-4">
         <input type="text" name="name" placeholder="Your Name (optional)" class="w-full border p-2 rounded">
         <input type="email" name="email" placeholder="Your Email (optional)" class="w-full border p-2 rounded">
@@ -67,10 +91,9 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-100 text-center py-6 text-sm text-gray-500">
-    &copy; 2025 Stay Safe Online. All rights reserved.
+  <footer class="bg-white text-center py-6 text-sm text-gray-500">
+    © 2025 Stay Safe Online. All rights reserved.
   </footer>
-
+  <script src="main.js"></script>
 </body>
 </html>
