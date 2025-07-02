@@ -1,57 +1,83 @@
-<!-- blog.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LDTK1SKWEW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LDTK1SKWEW');
-</script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read tips on avoiding online dating scams, phishing, and crypto fraud from Scam Safety Coach.">
+  <meta name="keywords" content="online dating scams, phishing scams, crypto scams, scam safety coach">
   <title>Blog | Scam Safety Coach</title>
- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <!-- MailerLite Universal -->
-<script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '1632073');
-</script>
-<!-- End MailerLite Universal -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet"/><link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    body.menu-open { overflow: hidden; }
+    #mobile-menu a:hover { background-color: #e3f2fd; color: #1e40af; }
+  </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
   <header class="bg-white shadow">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold">Scam Safety Blog</h1>
-      <nav>
-        <a href="index.html" class="mr-4 text-blue-600">Home</a>
-        <a href="blog.html" class="text-blue-600 font-semibold">Blog</a>
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="img/logo.webp" alt="Scam Safety Coach Logo" class="w-29 h-20" loading="lazy">
+        <span class="text-xl font-bold text-gray-900">Stay Safe Online</span>
+      </a>
+      <nav class="hidden md:block">
+        <ul class="flex space-x-4">
+          <li><a href="index.html" class="hover:underline">Home</a></li>
+          <li><a href="about.html" class="hover:underline">About</a></li>
+          <li><a href="services.html" class="hover:underline">Services</a></li>
+          <li><a href="guide.html" class="hover:underline">Free Guide</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact</a></li>
+          <li><a href="blog.html" class="font-semibold text-blue-600">Blog</a></li>
+          <li><a href="testimonials.html" class="hover:underline">Testimonials</a></li>
+        </ul>
       </nav>
+      <button id="menu-btn" class="md:hidden focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-600" aria-label="Toggle menu" aria-expanded="false">
+        <svg class="h-8 w-8 text-gray-700 hamburger-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg class="h-8 w-8 text-gray-700 close-icon hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
     </div>
+    <nav id="mobile-menu" class="md:hidden bg-white border-t border-gray-200 hidden" aria-label="Mobile menu">
+      <ul class="flex flex-col space-y-1 p-4 text-gray-700 font-medium">
+        <li><a href="index.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Home</a></li>
+        <li><a href="about.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">About</a></li>
+        <li><a href="services.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Services</a></li>
+        <li><a href="guide.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Free Guide</a></li>
+        <li><a href="contact.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Contact</a></li>
+        <li><a href="blog.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700 font-semibold">Blog</a></li>
+        <li><a href="testimonials.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Testimonials</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main class="container mx-auto px-4 py-12">
+    <h1 class="text-3xl font-bold mb-4 text-center">Scam Safety Blog</h1>
     <section class="mb-8">
       <h2 class="text-2xl font-bold mb-4">Latest Posts</h2>
       <div class="grid gap-6 md:grid-cols-2">
-        <!-- Blog Post Preview -->
         <article class="bg-white p-6 rounded shadow">
           <h3 class="text-xl font-semibold mb-2">5 Red Flags You're Talking to a Scammer</h3>
           <p class="text-sm text-gray-600 mb-4">June 2025</p>
           <p class="mb-4">Learn the most common warning signs of online romance scams—and how to protect yourself before it's too late.</p>
           <a href="posts/red-flags.html" class="text-blue-600 hover:underline">Read More →</a>
         </article>
+        <article class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-semibold mb-2">How to Spot Crypto Scams in 2025</h3>
+          <p class="text-sm text-gray-600 mb-4">July 2025</p>
+          <p class="mb-4">Discover the latest tactics used in cryptocurrency scams and how to protect your wallet.</p>
+          <a href="posts/crypto-scams.html" class="text-blue-600 hover:underline">Read More →</a>
+        </article>
       </div>
     </section>
   </main>
-  
-  <footer class="text-center py-6 text-sm text-gray-500">
-    © 2025 Scam Safety Coach. All rights reserved.
+
+  <footer class="bg-white text-center py-6 text-sm text-gray-500">
+    © 2025 Stay Safe Online. All rights reserved.
   </footer>
+  <script src="main.js"></script>
 </body>
 </html>
