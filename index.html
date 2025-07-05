@@ -111,6 +111,46 @@
       </div>
     </div>
   </section>
+  <section id="faq" class="bg-gray-50 py-12">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+
+    <div class="space-y-4">
+      <!-- FAQ Item -->
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <button class="w-full flex justify-between items-center px-4 py-3 bg-white text-left font-medium text-gray-800 faq-toggle">
+          How do I know if someone I'm talking to is a scammer?
+          <span class="text-xl">+</span>
+        </button>
+        <div class="px-4 py-3 text-gray-600 hidden faq-answer">
+          Watch for signs like rushed intimacy, avoidance of video calls, or requests for money or gift cards. You can also book a scam check if you're unsure.
+        </div>
+      </div>
+
+      <!-- FAQ Item -->
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <button class="w-full flex justify-between items-center px-4 py-3 bg-white text-left font-medium text-gray-800 faq-toggle">
+          What services do you offer?
+          <span class="text-xl">+</span>
+        </button>
+        <div class="px-4 py-3 text-gray-600 hidden faq-answer">
+          I offer scam profile reviews, 1-on-1 coaching, and full dating safety audits. You’ll get honest feedback and clear steps.
+        </div>
+      </div>
+
+      <!-- FAQ Item -->
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <button class="w-full flex justify-between items-center px-4 py-3 bg-white text-left font-medium text-gray-800 faq-toggle">
+          Do you offer refunds?
+          <span class="text-xl">+</span>
+        </button>
+        <div class="px-4 py-3 text-gray-600 hidden faq-answer">
+          Because of the nature of digital services, all sales are final. But if you have any concerns, reach out—I want you to feel supported.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <section id="guide" class="py-12 bg-white">
     <div class="container mx-auto px-4 max-w-3xl text-center">
@@ -150,6 +190,15 @@
     © 2025 Stay Safe Online. All rights reserved.
   </footer>
   <script src="main.js"></script>
+  <script>
+  document.querySelectorAll('.faq-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+      const answer = button.nextElementSibling;
+      answer.classList.toggle('hidden');
+      button.querySelector('span').textContent = answer.classList.contains('hidden') ? '+' : '–';
+    });
+  });
+</script>
   <!-- MailerLite Universal -->
 <script>
     (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
