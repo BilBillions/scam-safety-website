@@ -180,6 +180,9 @@ img {
   border: 5px solid #FFFFFF;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
+.profile-image {
+    background-color: #eee;
+}
 
 .hero-content p {
   max-width: 650px;
