@@ -1,126 +1,57 @@
+<!-- MY PROJECT/about.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Meet Bil Miracle, your Scam Safety Coach, dedicated to protecting you from online dating scams and phishing fraud.">
-  <meta name="keywords" content="scam safety coach, online dating scams, phishing scams, internet safety">
-  <title>About | Scam Safety Coach</title>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          primary: '#2563eb', // Example: custom blue
-        }
-      }
-    }
-  }
-</script>
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <style>
-    body.menu-open { overflow: hidden; }
-    #mobile-menu a:hover { background-color: #e3f2fd; color: #1e40af; }
-  </style>
-  <!-- Google tag (gtag.js) -->
-  <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-LDTK1SKWEW"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-LDTK1SKWEW');
-  </script>
-  <!-- MailerLite Universal -->
-  <script async defer src="https://assets.mailerlite.com/js/universal.js">
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments);},l=d.createElement(e),l.async=1,l.src=u,n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '1632073');
-  </script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Bil Miracle",
-      "jobTitle": "Scam Safety Coach",
-      "url": "https://scamsafetycoach.online",
-      "sameAs": ["https://calendly.com/bigbil09000"]
-    }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Scam Safety Coach</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-gray-50 text-gray-900">
-  <header class="bg-white shadow">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <a href="index.html" class="flex items-center space-x-2">
-        <img src="img/logo.webp" alt="Scam Safety Coach Logo" class="w-29 h-20" loading="lazy">
-        <span class="text-xl font-bold text-gray-900">Stay Safe Online</span>
-      </a>
-      <nav class="hidden md:block">
-        <ul class="flex space-x-4">
-          <li><a href="index.html" class="hover:underline">Home</a></li>
-          <li><a href="about.html" class="font-semibold text-blue-600">About</a></li>
-          <li><a href="services.html" class="hover:underline">Services</a></li>
-          <li><a href="guide.html" class="hover:underline">Free Guide</a></li>
-          <li><a href="contact.html" class="hover:underline">Contact</a></li>
-          <li><a href="blog.html" class="hover:underline">Blog</a></li>
-          <li><a href="testimonials.html" class="hover:underline">Testimonials</a></li>
-        </ul>
-      </nav>
-      <button id="menu-btn" class="md:hidden focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-600" aria-label="Toggle menu" aria-expanded="false">
-        <svg class="h-8 w-8 text-gray-700 hamburger-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-        <svg class="h-8 w-8 text-gray-700 close-icon hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-    </div>
-    <nav id="mobile-menu" class="md:hidden bg-white border-t border-gray-200 hidden" aria-label="Mobile menu">
-      <ul class="flex flex-col space-y-1 p-4 text-gray-700 font-medium">
-        <li><a href="index.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Home</a></li>
-        <li><a href="about.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700 font-semibold">About</a></li>
-        <li><a href="services.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Services</a></li>
-        <li><a href="guide.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Free Guide</a></li>
-        <li><a href="contact.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Contact</a></li>
-        <li><a href="blog.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Blog</a></li>
-        <li><a href="testimonials.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Testimonials</a></li>
-      </ul>
-    </nav>
-  </header>
+<body>
 
-  <main class="container mx-auto px-4 py-12 max-w-3xl">
-    <h1 class="text-3xl font-bold text-center mb-6">About Bil Miracle</h1>
-    <section class="text-center mb-12">
-      <img src="img/IMG_1516.webp" alt="Bil Miracle, Scam Safety Coach" class="mx-auto rounded-full w-40 h-40 mb-4" loading="lazy">
-      <h2 class="text-2xl font-bold">Your Scam Safety Advocate</h2>
-      <p class="text-gray-600 mt-2">Protecting You from Online Dating Scams and Phishing Fraud</p>
-    </section>
-    <section class="space-y-6 text-lg"><p>Hi, I’m <strong>Bil Miracle</strong>, your Scam Safety Coach and founder of <a href="https://scamsafetycoach.online" class="text-blue-600 underline">ScamSafetyCoach.online</a>.</p>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">Scam Safety Coach</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                     <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <p>My journey began in a place I’m not proud of: I was once involved in online scams. It’s difficult to admit — but it’s part of my story. And it’s the reason I’m here today.</p>
+    <main>
+        <section id="about-full" class="section">
+            <div class="container">
+                <h2 class="section-title">My Story</h2>
+                <div class="about-content" style="text-align: left; max-width: 800px; margin: 0 auto;">
+                    <p><strong>I’m Bil Miracle, and I help people protect their hearts and their finances from online dating scams.</strong></p>
+                    <p>I haven’t always walked the path I’m on today. For a long time, my relationship with money was filled with confusion, survival, and secrecy. I learned how to navigate the online world in ways that I’m not proud of—ways that hurt others and slowly began to damage me, too.</p>
+                    <p>I’ve seen firsthand how easily trust can be manipulated in today’s digital world. I know how professional and convincing scammers can be because I’ve been on the inside. That experience gave me deep insight into the real methods, red flags, and psychological tactics these scammers use, and now I use that knowledge to help others stay safe.</p>
+                    <p>Today, I use the very knowledge I once misused to help others. I guide people who are looking for real connection online, and I teach them how to protect their hearts, their minds, and their money from scammers.</p>
+                    <p>I’m not here to judge. I’m here to educate, support, and empower people like you. I know how online romance scams work from the inside—the psychology, the manipulation, and the red flags most people miss. I also know how painful it is to be deceived and how shame keeps people silent.</p>
+                    <p>My mission now is to protect and empower people who are looking for real connection. If you’re not sure whether to trust someone you’ve met online or if you’ve already been hurt, I’m here. I’ve been on both sides. And I’ll help you stay safe while keeping your heart open to real connection.</p>
+                    <p><strong>You deserve love that’s true. And you deserve to never feel foolish for trusting someone again.</strong></p>
+                    <div class="text-center" style="margin-top: 3rem;">
+                        <a href="contact.html" class="btn">Contact Me for a Private Consultation</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <p>Years ago, I participated in romance scams, phishing schemes, and fake investment setups. But one day, everything changed. I thought of my own mother — and asked myself, <em>“How would I feel if someone did to her what I was doing to others?”</em></p>
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2025 Scam Safety Coach. All rights reserved.</p>
+        </div>
+    </footer>
 
-        <p>That moment shook me. It made me stop, reflect, and choose a different path.</p>
-
-        <p>Through deep self-reflection and a commitment to change, I walked away from that world — and turned my experience into a mission to protect others from the very harm I once caused.</p>
-
-        <p>Today, I teach people how to recognize the emotional and psychological tactics scammers use — especially in online dating, phishing, and crypto fraud. My goal is to empower you with knowledge so you can protect yourself emotionally, financially, and confidently support your loved ones who may be at risk.</p>
-
-        <p>This site is more than just information. It’s a space for <strong>awareness, truth, and healing</strong> — built on real experience and sincere purpose.</p>
-
-        <p>If you're reading this, you've already taken a powerful step toward safety. You're not alone anymore. I’ve lived both sides of the story — and I’m here to guide you through it.</p>
-
-        <p class="font-semibold text-lg">Let’s stay safe — together.</p>
-        <p class="text-right font-bold">– Bil Miracle</p>
-      <p class="text-center"><a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Get in Touch</a></p>
-    </section>
-  </main>
-
-  <footer class="bg-white text-center py-6 text-sm text-gray-500">
-    © 2025 Stay Safe Online. All rights reserved.
-  </footer>
-  <script src="main.js"></script>
 </body>
 </html>
