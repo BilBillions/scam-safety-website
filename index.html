@@ -1,35 +1,147 @@
-<header class="main-header">
-  <div class="container">
-    <a href="index.html" class="logo-link">
-      <img src="img/logo.webp" alt="Scam Safety Coach Logo">
-    </a>
-    <button id="menu-button" aria-label="Open menu">
-      <span class="hamburger"></span>
-    </button>
-    <nav id="main-nav" class="main-nav">
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scam Safety Coach | Stay Safe Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io 2/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io 2/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io 2/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io 2/site.webmanifest">
+</head>
+<body>
 
-<script>
-const menuBtn = document.getElementById('menu-button');
-const nav = document.getElementById('main-nav');
-menuBtn.addEventListener('click', function() {
-  menuBtn.classList.toggle('active');
-  nav.classList.toggle('nav-active');
-});
-nav.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    menuBtn.classList.remove('active');
-    nav.classList.remove('nav-active');
-  });
-});
-</script>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <img src="img/logo.webp" alt="Scam Safety Coach Logo">
+      </a>
+        <button id="menu-button" aria-label="Open menu">
+  <span class="hamburger"></span>
+</button>
+<nav id="main-nav" class="main-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/services.html">Services</a></li>
+    <li><a href="/guide.html">Guide</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+  </ul>
+</nav>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger-menu" id="menu-button" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <img src="img/IMG_1516.webp" alt="Bil Miracle, Scam Safety Coach" class="profile-image">
+        <h2>Helping people stay safe from online dating scams through education, guidance, and honest support.</h2>
+        <p>My mission is to empower you with the knowledge and confidence to navigate online dating safely and avoid falling victim to romance scams.</p>
+        <a href="#services" class="btn">View My Services</a>
+        <a href="guide.html" class="btn btn-accent">Get Free Guide</a>
+      </div>
+    </section>
+
+    <!-- About Me Preview -->
+    <section id="about" class="section">
+      <div class="container about-content">
+        <h2 class="section-title">About Me</h2>
+        <p>I’m Bil Miracle. My past experience gave me deep insight into the real methods and psychological tactics scammers use. Today, I use the very knowledge I once misused to help others. I’m here to educate, support, and empower people like you who are looking for real connection online. No judgment. Just support, truth, and tools that actually work.</p>
+        <a href="about.html" class="btn">Read My Full Story</a>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section" style="background: #F7F7F7;">
+        <div class="container">
+            <h2 class="section-title">How I Can Help You</h2>
+            <p class="text-center" style="max-width: 700px; margin: -2rem auto 3rem auto;">Choose a service that fits your needs. All consultations are private, confidential, and judgment-free.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Scam Profile Check</h3>
+                    <p>I’ll analyze a profile or message and tell you if it’s a scam—quickly and privately.</p>
+                    <div class="price">$30</div>
+                    <a href="https://www.paypal.com/donate/?hosted_button_id=PVZAP6YYPU6FJ&amount=30" target="_blank" class="btn">Order Now</a>
+                </div>
+                <div class="service-card">
+                    <h3>Private 1-on-1 Session</h3>
+                     <p>A one-on-one coaching call to talk through your experience or questions about online safety.</p>
+                    <div class="price">$50</div>
+                    <a href="https://www.paypal.com/donate/?hosted_button_id=PVZAP6YYPU6FJ&amount=50" target="_blank" class="btn">Book a Call</a>
+                </div>
+                <div class="service-card">
+                    <h3>Full Scam Review</h3>
+                    <p>Send all your messages and profiles. I’ll provide a complete breakdown and analysis.</p>
+                    <div class="price">$100</div>
+                    <a href="https://www.paypal.com/donate/?hosted_button_id=PVZAP6YYPU6FJ&amount=100" target="_blank" class="btn">Get a Full Review</a>
+                </div>
+            </div>
+             <div class="text-center" style="margin-top: 3rem;">
+                <a href="services.html" class="btn btn-accent">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Guide Call to Action -->
+    <section id="guide" class="section">
+        <div class="container">
+            <h2>Free Safety Guide</h2>
+            <p class="italic">"Scammers are good at what they do, but once you know the signs, you take your power back."</p>
+            <p>This free guide gives you 5 of the most common red flags to look out for in online dating. I created this from my real experience so you can stay one step ahead.</p>
+             <a href="MyStoryWhyINowHelpPeopleStaySafe.pdf" target="_blank" class="btn btn-accent">Download the Free Guide</a>
+        </div>
+    </section>
+    
+  </main>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="text-center" style="max-width: 600px; margin: -2rem auto 3rem auto;">Need help or want to book a session? Reach out. I’ll get back to you within 24 hours.</p>
+        <form action="mailto:bigbil09000@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <p>© 2025 Scam Safety Coach. All rights reserved.</p>
+      <p>Helping you date safely and with confidence.</p>
+    </div>
+  </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
