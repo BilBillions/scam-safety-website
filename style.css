@@ -156,7 +156,6 @@ img {
     color: #333;
 }
 
-
 /* --- Hero Section (Home Page) --- */
 .hero {
   background-color: #E0F4FF; /* A lighter, welcoming blue */
@@ -189,6 +188,7 @@ img {
   margin: 0 auto 2rem auto;
   font-size: 1.1rem;
 }
+
 
 /* --- About Section --- */
 #about, #about-full {
