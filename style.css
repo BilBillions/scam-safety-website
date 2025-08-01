@@ -58,11 +58,15 @@ img {
 /* --- Header & Navigation --- */
 .main-header {
   background-color: #FFFFFF;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
   padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 1000;
+  transition: box-shadow 0.3s ease;
+}
+
+.main-header.scrolled {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
 .main-header .container {
@@ -71,10 +75,20 @@ img {
   align-items: center;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #0A4D68;
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0A4D68;
+}
+.logo-link img {
+    height: 50px;
+    width: auto;
+}
+.logo-link:hover {
+    color: #0A4D68;
 }
 
 .main-nav ul {
@@ -174,7 +188,7 @@ img {
 }
 
 /* --- About Section --- */
-#about {
+#about, #about-full {
     background: #FFFFFF;
 }
 
@@ -200,6 +214,8 @@ img {
   box-shadow: 0 5px 20px rgba(0,0,0,0.07);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .service-card:hover {
@@ -228,7 +244,7 @@ img {
 
 .service-card p {
   margin-bottom: 1.5rem;
-  min-height: 60px; /* Ensures cards have similar height */
+  flex-grow: 1;
 }
 
 /* --- Free Guide Section --- */
@@ -314,15 +330,21 @@ img {
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.07);
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .blog-post-preview:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .blog-post-preview .post-content {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .blog-post-preview h3 {
@@ -336,24 +358,40 @@ img {
     font-family: 'Poppins', sans-serif;
 }
 
+.blog-post-preview p {
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+}
+
 .blog-post-preview a {
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+    align-self: flex-start;
 }
 
 
 /* --- Single Blog Post --- */
 .blog-post-full {
     background: #FFFFFF;
-    padding: 3rem;
+    padding: 2rem 3rem 3rem 3rem;
     border-radius: 8px;
     max-width: 800px;
     margin: 3rem auto;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
 }
 
 .blog-post-full h1 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.blog-post-full h2 {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #E0F4FF;
+    padding-bottom: 0.5rem;
 }
 
 .blog-post-full .post-meta {
@@ -363,16 +401,23 @@ img {
     font-family: 'Poppins', sans-serif;
 }
 
-.blog-post-full ol {
+.blog-post-full p, .blog-post-full ul, .blog-post-full ol {
+    margin-bottom: 1.5rem;
+}
+
+.blog-post-full ul, .blog-post-full ol {
     margin-left: 1.5rem;
-    margin-bottom: 2rem;
     line-height: 1.8;
 }
 
-.blog-post-full ol li {
-    margin-bottom: 1rem;
+.blog-post-full blockquote {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #E0F4FF;
+    border-left: 5px solid #088395;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
 }
-/* --- Add this to the end of MY PROJECT/css/style.css --- */
 
 /* --- Testimonials Page --- */
 .testimonials-grid {
@@ -395,7 +440,7 @@ img {
   margin: 0 0 1.5rem 0;
   font-style: italic;
   color: #555;
-  flex-grow: 1; /* Allows cards in a row to have the same height */
+  flex-grow: 1;
 }
 
 .testimonial-card .client-name {
@@ -404,13 +449,6 @@ img {
   color: #0A4D68;
   font-style: normal;
   align-self: flex-start;
-}
-
-/* --- Add this to the end of MY PROJECT/css/style.css --- */
-
-/* --- Header Scroll Effect --- */
-.main-header.scrolled {
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 /* --- Hamburger Menu Button --- */
@@ -437,7 +475,6 @@ img {
     transform-origin: 1px;
 }
 
-/* Hamburger animation */
 .hamburger-menu.is-active span:nth-child(1) {
     transform: rotate(45deg);
 }
@@ -451,7 +488,7 @@ img {
 
 
 /* --- Responsive Mobile Navigation --- */
-@media (max-width: 768px) {
+@media (max-width: 820px) {
     .main-nav {
         flex-direction: column;
         justify-content: center;
@@ -487,13 +524,13 @@ img {
 
 
 /* --- Fade-in Animation on Scroll --- */
-.service-card, .testimonial-card, .blog-post-preview, .about-content, .contact-form {
+.service-card, .testimonial-card, .blog-post-preview, .about-content, .contact-form, .hero-content {
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
 }
 
-.service-card.visible, .testimonial-card.visible, .blog-post-preview.visible, .about-content.visible, .contact-form.visible {
+.service-card.visible, .testimonial-card.visible, .blog-post-preview.visible, .about-content.visible, .contact-form.visible, .hero-content.visible {
     opacity: 1;
     transform: translateY(0);
 }
