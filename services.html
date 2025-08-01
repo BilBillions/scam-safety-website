@@ -1,90 +1,95 @@
+<!-- MY PROJECT/services.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width devices-width, initial-scale=1.0">
-  <meta name="description" content="Book scam checks, safety consultations, and full audits with Scam Safety Coach to stay safe online.">
-  <meta name="keywords" content="scam check, online safety consultation, scam safety coach, dating safety audit">
-  <title>Services | Scam Safety Coach</title>
- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          primary: '#2563eb', // Example: custom blue
-        }
-      }
-    }
-  }
-</script>
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <style>
-    body.menu-open { overflow: hidden; }
-    #mobile-menu a:hover { background-color: #e3f2fd; color: #1e40af; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Scam Safety Coach</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <header class="bg-white shadow">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <a href="index.html" class="flex items-center space-x-2">
-        <img src="img/logo.webp" alt="Scam Safety Coach Logo" class="w-29 h-20" loading="lazy">
-        <span class="text-xl font-bold text-gray-900">Stay Safe Online</span>
-      </a>
-      <nav class="hidden md:block">
-        <ul class="flex space-x-4">
-          <li><a href="index.html" class="hover:underline">Home</a></li>
-          <li><a href="about.html" class="hover:underline">About</a></li>
-          <li><a href="services.html" class="font-semibold text-blue-600">Services</a></li>
-          <li><a href="guide.html" class="hover:underline">Free Guide</a></li>
-          <li><a href="contact.html" class="hover:underline">Contact</a></li>
-          <li><a href="blog.html" class="hover:underline">Blog</a></li>
-          <li><a href="testimonials.html" class="hover:underline">Testimonials</a></li>
-        </ul>
-      </nav>
-      <button id="menu-btn" class="md:hidden focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-600" aria-label="Toggle menu" aria-expanded="false">
-        <svg class="h-8 w-8 text-gray-700 hamburger-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-        <svg class="h-8 w-8 text-gray-700 close-icon hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-    </div>
-    <nav id="mobile-menu" class="md:hidden bg-white border-t border-gray-200 hidden" aria-label="Mobile menu">
-      <ul class="flex flex-col space-y-1 p-4 text-gray-700 font-medium">
-        <li><a href="index.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Home</a></li>
-        <li><a href="about.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">About</a></li>
-        <li><a href="services.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700 font-semibold">Services</a></li>
-        <li><a href="guide.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Free Guide</a></li>
-        <li><a href="contact.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Contact</a></li>
-        <li><a href="blog.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Blog</a></li>
-        <li><a href="testimonials.html" class="block px-3 py-2 rounded hover:bg-blue-100 hover:text-blue-700">Testimonials</a></li>
-      </ul>
-    </nav>
-  </header>
+<body>
 
-  <section id="services" class="py-12 bg-gray-100">
-    <div class="container mx-auto px-4 max-w-3xl">
-      <h1 class="text-3xl font-bold mb-4 text-center">Our Services</h1>
-      <h2 class="text-2xl font-bold mb-4">Protect Yourself with Expert Support</h2>
-      <ul class="space-y-4">
-        <li class="border p-4 rounded bg-white">🔍 Scam Check – <strong>$30</strong> <a href="https://paypal.me/Bilmiracle777" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Book Now</a></li>
-        <li class="border p-4 rounded bg-white">🛡️ 1-on-1 Online Safety Consultations – <strong>$50/hour</strong> <a href="https://paypal.me/Bilmiracle777" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Book Now</a></li>
-        <li class="border p-4 rounded bg-white">⛑️ Custom Safety Action Plan – <strong>$70</strong> <a href="https://paypal.me/Bilmiracle777" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Book Now</a></li>
-        <li class="border p-4 rounded bg-white">📋 Full Dating Safety Audit – <strong>$100</strong> <a href="https://paypal.me/Bilmiracle777" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Book Now</a></li>
-        <li class="border p-4 rounded bg-white">🚩 Red Flag Profile Analysis – <strong>$150</strong> <a href="https://paypal.me/Bilmiracle777" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Book Now</a></li>
-        <li class="border p-4 rounded bg-white">❤️‍🩹 Scam Recovery Support – <strong>$200</strong> <a href="https://paypal.me/Bilmiracle777" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Book Now</a></li>
-      </ul>
-      <a href="mailto:bil@scamsafetycoach.online" class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full mt-6 inline-block">Book a Free Scam Check</a>
-    </div>
-  </section>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">Scam Safety Coach</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                     <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <footer class="bg-white text-center py-6 text-sm text-gray-500">
-    © 2025 Stay Safe Online. All rights reserved.
-  </footer>
-  <script src="main.js"></script>
+    <main>
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section-title">My Services</h2>
+                <p class="text-center" style="max-width: 700px; margin: -2rem auto 3rem auto;">I offer a range of confidential services to help you navigate online dating with confidence. Payments are handled securely through PayPal.</p>
+                <div class="services-grid">
+                    <!-- Service Card -->
+                    <div class="service-card">
+                        <h3>Scam Profile Check</h3>
+                        <p>I’ll analyze a profile or message and tell you if it’s a scam.</p>
+                        <div class="price">$30</div>
+                        <a href="https://www.paypal.com/donate/?hosted_button_id=PVZAP6YYPU6FJ&amount=30" target="_blank" class="btn">Order Now</a>
+                    </div>
+                    <!-- Service Card -->
+                    <div class="service-card">
+                        <h3>1-on-1 Private Session</h3>
+                        <p>A one-hour coaching call to discuss your situation and online safety questions.</p>
+                        <div class="price">$50<span>/hour</span></div>
+                        <a href="https://www.paypal.com/donate/?hosted_button_id=PVZAP6YYPU6FJ&amount=50" target="_blank" class="btn">Book a Call</a>
+                    </div>
+                    <!-- Service Card -->
+                    <div class="service-card">
+                        <h3>Custom Safety Action Plan</h3>
+                        <p>A personalized plan with actionable steps to improve your online security.</p>
+                        <div class="price">$70</div>
+                        <a href="#" class="btn">Request Plan</a>
+                    </div>
+                    <!-- Service Card -->
+                    <div class="service-card">
+                        <h3>Full Scam Review</h3>
+                        <p>Send all messages and profiles for a complete breakdown and analysis.</p>
+                        <div class="price">$100</div>
+                        <a href="https://www.paypal.com/donate/?hosted_button_id=PVZAP6YYPU6FJ&amount=100" target="_blank" class="btn">Get a Full Review</a>
+                    </div>
+                    <!-- Service Card -->
+                    <div class="service-card">
+                        <h3>Red Flag Profile Analysis</h3>
+                        <p>In-depth analysis of a dating profile to identify all potential red flags.</p>
+                        <div class="price">$150</div>
+                        <a href="#" class="btn">Request Analysis</a>
+                    </div>
+                    <!-- Service Card -->
+                    <div class="service-card">
+                        <h3>Scam Recovery Support</h3>
+                        <p>Support sessions to help you heal and regain confidence after a scam.</p>
+                        <div class="price">$200</div>
+                        <a href="#" class="btn">Get Support</a>
+                    </div>
+                </div>
+                 <div class="text-center" style="margin-top: 3rem; background-color: #e0f4ff; padding: 2rem; border-radius: 8px;">
+                    <h3 style="margin-bottom: 1rem;">Not Sure Where to Start?</h3>
+                    <p style="margin-bottom: 1.5rem;">Book a free 15-minute introductory call to discuss your concerns.</p>
+                    <a href="https://calendly.com/bigbil09000" target="_blank" class="btn btn-accent">Book Free Call on Calendly</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2025 Scam Safety Coach. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
