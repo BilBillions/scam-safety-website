@@ -30,33 +30,7 @@ Color Palette:
   position: relative;
   transition: all 0.3s;
 }
-#menu-button .hamburger:before,
-#menu-button .hamburger:after {
-  content: '';
-  display: block;
-  width: 30px;
-  height: 3px;
-  background: #0A4D68;
-  position: absolute;
-  transition: all 0.3s;
-}
-#menu-button .hamburger:before {
-  top: -10px;
-}
-#menu-button .hamburger:after {
-  top: 10px;
-}
 
-/* Hamburger active animation */
-#menu-button.active .hamburger {
-  background: transparent;
-}
-#menu-button.active .hamburger:before {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-#menu-button.active .hamburger:after {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
 
 /* Responsive nav styles (already partly present, but for clarity) */
 @media (max-width: 768px) {
