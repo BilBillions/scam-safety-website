@@ -143,5 +143,22 @@
   </footer>
 
     <script src="main.js"></script>
+    <script>
+const menuBtn = document.getElementById('menu-button');
+const nav = document.getElementById('main-nav');
+
+menuBtn.addEventListener('click', function() {
+  menuBtn.classList.toggle('active');
+  nav.classList.toggle('nav-active');
+});
+
+// Optional: close menu when clicking a link (mobile UX)
+nav.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    menuBtn.classList.remove('active');
+    nav.classList.remove('nav-active');
+  });
+});
+</script>
 </body>
 </html>
