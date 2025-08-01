@@ -1,24 +1,21 @@
 // Mobile Menu Toggle
-const menuBtn = document.getElementById("menu-btn");
-const mobileMenu = document.getElementById("mobile-menu");
+const menuBtn = document.getElementById("menu-button");
+const mobileMenu = document.getElementById("main-nav");
 
 if (menuBtn && mobileMenu) {
   menuBtn.addEventListener("click", () => {
     const isExpanded = menuBtn.getAttribute("aria-expanded") === "true";
     menuBtn.setAttribute("aria-expanded", !isExpanded);
-    mobileMenu.classList.toggle("hidden");
+    mobileMenu.classList.toggle("active");
     document.body.classList.toggle("menu-open");
-    menuBtn.querySelector(".hamburger-icon").classList.toggle("hidden");
-    menuBtn.querySelector(".close-icon").classList.toggle("hidden");
   });
 
+  // Close menu when clicking on nav links
   mobileMenu.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
-      mobileMenu.classList.add("hidden");
+      mobileMenu.classList.remove("active");
       menuBtn.setAttribute("aria-expanded", false);
       document.body.classList.remove("menu-open");
-      menuBtn.querySelector(".hamburger-icon").classList.remove("hidden");
-      menuBtn.querySelector(".close-icon").classList.add("hidden");
     });
   });
 }
