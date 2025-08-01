@@ -13,8 +13,9 @@ Color Palette:
 - White: #FFFFFF
 */
 /* Hamburger icon styles */
+/* Hamburger icon styles */
 #menu-button {
-  display: none;
+  display: none; /* Hidden by default, only visible on mobile */
   background: none;
   border: none;
   font-size: 2rem;
@@ -30,9 +31,33 @@ Color Palette:
   position: relative;
   transition: all 0.3s;
 }
+#menu-button .hamburger:before,
+#menu-button .hamburger:after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #0A4D68;
+  position: absolute;
+  transition: all 0.3s;
+}
+#menu-button .hamburger:before {
+  top: -10px;
+}
+#menu-button .hamburger:after {
+  top: 10px;
+}
+#menu-button.active .hamburger {
+  background: transparent;
+}
+#menu-button.active .hamburger:before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+#menu-button.active .hamburger:after {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
 
-
-/* Responsive nav styles (already partly present, but for clarity) */
+/* Mobile nav styles */
 @media (max-width: 768px) {
   #menu-button {
     display: block;
@@ -59,6 +84,24 @@ Color Palette:
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+/* Desktop nav styles */
+@media (min-width: 769px) {
+  #menu-button {
+    display: none !important;
+  }
+  #main-nav {
+    position: static;
+    flex-direction: row;
+    height: auto;
+    box-shadow: none;
+    padding-top: 0;
+    right: 0;
+  }
+  #main-nav.nav-active {
+    right: 0;
   }
 }
 
