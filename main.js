@@ -1,57 +1,66 @@
+// Mobile Menu Toggle
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+if (menuBtn && mobileMenu) {
+  menuBtn.addEventListener("click", () => {
+    const isExpanded = menuBtn.getAttribute("aria-expanded") === "true";
+    menuBtn.setAttribute("aria-expanded", !isExpanded);
+    mobileMenu.classList.toggle("hidden");
+    document.body.classList.toggle("menu-open");
+    menuBtn.querySelector(".hamburger-icon").classList.toggle("hidden");
+    menuBtn.querySelector(".close-icon").classList.toggle("hidden");
+  });
+
+  mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+      menuBtn.setAttribute("aria-expanded", false);
+      document.body.classList.remove("menu-open");
+      menuBtn.querySelector(".hamburger-icon").classList.remove("hidden");
+      menuBtn.querySelector(".close-icon").classList.add("hidden");
+    });
+  });
+}
+
+// Client-side form validation for contact forms
 document.addEventListener('DOMContentLoaded', () => {
+  const contactForms = document.querySelectorAll('.contact-form');
 
-    // 1. Mobile Menu Functionality
-    const menuButton = document.getElementById('menu-button');
-    const mainNav = document.getElementById('main-nav');
+  contactForms.forEach((contactForm) => {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = contactForm.querySelector('input[placeholder*="Name"]').value.trim();
+      const email = contactForm.querySelector('input[type="email"]').value.trim();
+      const message = contactForm.querySelector('textarea').value.trim();
 
-    if (menuButton && mainNav) {
-        menuButton.addEventListener('click', () => {
-            mainNav.classList.toggle('nav-active');
-            menuButton.classList.toggle('is-active');
-        });
-    }
+      if (!email || !message) {
+        alert("Please fill in all required fields.");
+        return;
+      }
 
-    // 2. Smooth Scrolling for Anchor Links (if any on a page)
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-
-            if(targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-    
-    // 3. Add a subtle shadow to the header on scroll
-    const header = document.querySelector('.main-header');
-    if(header) {
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 30) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-    }
-
-    // 4. Fade-in animation for elements on scroll
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Stop observing after it's visible
-            }
-        });
-    }, {
-        threshold: 0.1 // Trigger when 10% of the element is visible
-    });
-
-    const elementsToAnimate = document.querySelectorAll('.service-card, .testimonial-card, .blog-post-preview, .about-content, .contact-form, .hero-content');
-    elementsToAnimate.forEach(el => observer.observe(el));
-
+      if (!validateEmail(email)) {
+        alert("Please enter a valid email address.");
+        return;
+      }
+const menuBtn = document.getElementById('menu-button');
+const nav = document.getElementById('main-nav');
+menuBtn.addEventListener('click', function() {
+  menuBtn.classList.toggle('active');
+  nav.classList.toggle('nav-active');
 });
+nav.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    menuBtn.classList.remove('active');
+    nav.classList.remove('nav-active');
+  }
+      // Allow Formspree to handle submission
+      contactForm.submit();
+    });
+  });
+});
+
+function validateEmail(email) {
+  const re = /^(([^<>()[\\]\\\\.,;:\\s@\"]+(\\.[^<>()[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@(([^<>()[\\]\\\\.,;:\\s@\"]+\\.)+[^<>()[\\]\\\\.,;:\\s@\"]{2,})$/i;
+  return re.test(email);
+}
