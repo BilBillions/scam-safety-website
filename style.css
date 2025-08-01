@@ -3,7 +3,7 @@
 /* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:wght@400;600&display=swap');
 
-/* 
+
 Color Palette:
 - Primary: #0A4D68 (Dark Blue)
 - Secondary: #088395 (Teal)
@@ -11,7 +11,6 @@ Color Palette:
 - Background: #F7F7F7 (Light Gray)
 - Text: #333333 (Dark Gray)
 - White: #FFFFFF
-*/
 
 /* --- General Styles & Resets --- */
 * {
@@ -187,16 +186,6 @@ img {
   max-width: 650px;
   margin: 0 auto 2rem auto;
   font-size: 1.1rem;
-}
-
-.hero-content {
-  /* opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.7s ease-out, transform 0.7s ease-out; */
-}
-.hero-content.visible {
-  /* opacity: 1;
-  transform: translateY(0); */
 }
 
 /* --- About Section --- */
