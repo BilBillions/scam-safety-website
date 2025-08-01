@@ -46,15 +46,15 @@ img {
 }
 
 /* --- Header & Navigation --- */
+
 .main-header {
   background-color: #FFFFFF;
-  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  padding: 0.5rem 0; /* Reduce vertical padding */
   position: sticky;
   top: 0;
   z-index: 1000;
-  transition: box-shadow 0.3s ease;
 }
-
 .main-header.scrolled {
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
@@ -72,10 +72,10 @@ img {
     font-size: 1.2rem;
     font-weight: 700;
     color: #0A4D68;
-}
+
 .logo-link img {
-    height: 50px;
-    width: auto;
+  max-height: 48px; /* Limit logo height */
+  width: auto;
 }
 .logo-link:hover {
     color: #0A4D68;
@@ -90,8 +90,8 @@ img {
 .main-nav a {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  font-size: 1rem;
-  padding-bottom: 5px;
+ font-size: 0.95rem;
+  padding-bottom: 3px; 
   border-bottom: 2px solid transparent;
 }
 
