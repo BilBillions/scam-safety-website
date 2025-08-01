@@ -1,6 +1,11 @@
 // --- MY PROJECT/js/main.js ---
 
-document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener("DOMContentLoaded", function() {
+  var heroContent = document.querySelector('.hero-content');
+  if (heroContent) {
+    heroContent.classList.add('visible');
+  }
+});
 
     // 1. Mobile Menu Functionality
     const menuButton = document.getElementById('menu-button');
