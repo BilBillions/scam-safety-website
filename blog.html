@@ -5,30 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blog | Scam Safety Coach</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io 2/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io 2/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io 2/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io 2/site.webmanifest">
 </head>
 <body>
 
   <!-- Header -->
   <header class="main-header">
     <div class="container">
-        <a href="index.html" class="logo-link"><h1 class="logo">Scam Safety Coach</h1></a>
-        <nav class="main-nav" id="main-nav">
-            <ul>
-            <li><a href="index.html" class="active">Home</a></li>
+      <a href="index.html" class="logo-link">
+        <img src="img/logo.webp" alt="Scam Safety Coach Logo">
+      </a>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
           <li><a href="contact.html">Contact</a></li>
-           <li><a href="testimonials.html">Testimonials</a></li>
-            </ul>
-        </nav>
-        <button class="hamburger-menu" id="menu-button" aria-label="Open Menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+        </ul>
+      </nav>
+      <button class="hamburger-menu" id="menu-button" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-</header>
+  </header>
 
   <main>
     <section id="blog" class="section">
@@ -36,7 +40,15 @@
         <h2 class="section-title">Latest Blog Posts</h2>
         <div class="blog-grid">
           
-          <!-- Blog Post Preview -->
+          <article class="blog-post-preview">
+            <div class="post-content">
+              <p class="post-date">July 2025</p>
+              <h3>How Crypto Romance Scams Work (and How to Spot Them)</h3>
+              <p>A dangerous new scam is growing fast, blending emotional manipulation with the complexity of cryptocurrency. Learn how it works and what to watch for.</p>
+              <a href="posts/crypto-scams.html">Read More →</a>
+            </div>
+          </article>
+          
           <article class="blog-post-preview">
             <div class="post-content">
               <p class="post-date">June 2025</p>
@@ -46,7 +58,6 @@
             </div>
           </article>
 
-          <!-- Add more articles here as you write them -->
           <article class="blog-post-preview">
             <div class="post-content">
               <p class="post-date">Coming Soon</p>
@@ -56,15 +67,6 @@
             </div>
           </article>
           
-          <article class="blog-post-preview">
-            <div class="post-content">
-              <p class="post-date">Coming Soon</p>
-              <h3>The Psychology of a Romance Scammer</h3>
-              <p>An inside look at the manipulation tactics scammers use to build trust and exploit emotions.</p>
-              <a href="#">Read More →</a>
-            </div>
-          </article>
-
         </div>
       </div>
     </section>
@@ -74,8 +76,10 @@
   <footer class="main-footer">
     <div class="container">
       <p>© 2025 Scam Safety Coach. All rights reserved.</p>
+      <p>Learn the signs. Trust yourself. Stay safe.</p>
     </div>
   </footer>
 
+  <script src="main.js"></script>
 </body>
 </html>
