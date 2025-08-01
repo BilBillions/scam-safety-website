@@ -33,10 +33,9 @@
       </button>
     </div>
   </header>
-
   <main>
     <!-- Hero Section -->
-    <<section id="home" class="hero">
+    <section id="home" class="hero">
       <div class="container hero-content">
         <img src="img/IMG_1516.webp" alt="Bil Miracle, Scam Safety Coach" class="profile-image">
         <h2>Helping people stay safe from online dating scams through education, guidance, and honest support.</h2>
@@ -95,7 +94,28 @@
             <a href="guide.html" class="btn btn-accent">Download the Free Guide</a>
         </div>
     </section>
-    
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="text-center" style="max-width: 600px; margin: -2rem auto 3rem auto;">Need help or want to book a session? Reach out. I’ll get back to you within 24 hours.</p>
+        <form action="mailto:bigbil09000@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
