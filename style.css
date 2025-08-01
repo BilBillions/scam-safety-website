@@ -3,15 +3,6 @@
 /* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:wght@400;600&display=swap');
 
-
-Color Palette:
-- Primary: #0A4D68 (Dark Blue)
-- Secondary: #088395 (Teal)
-- Accent: #F3B95F (Muted Gold)
-- Background: #F7F7F7 (Light Gray)
-- Text: #333333 (Dark Gray)
-- White: #FFFFFF
-
 /* --- General Styles & Resets --- */
 * {
   box-sizing: border-box;
