@@ -13,8 +13,9 @@
 body {
   font-family: 'Lora', serif;
   background-color: #F7F7F7;
-  color: #333333;
+  color: #2C2C2C;
   line-height: 1.7;
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,6 +44,8 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  background-color: #F7F7F7;
+  border: 1px solid #E0E0E0;
 }
 
 /* --- Header & Navigation --- */
@@ -125,25 +128,33 @@ img {
   border-radius: 50px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
+  font-size: 16px;
   transition: background-color 0.3s ease, transform 0.3s ease;
   border: none;
   cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(8, 131, 149, 0.3);
 }
 
 .btn:hover {
   background-color: #0A4D68;
   transform: translateY(-2px);
   color: #FFFFFF;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(10, 77, 104, 0.4);
 }
 
 .btn-accent {
     background-color: #F3B95F;
-    color: #333;
+    color: #2C2C2C;
+    box-shadow: 0 2px 8px rgba(243, 185, 95, 0.3);
 }
 
 .btn-accent:hover {
     background-color: #e0a850;
-    color: #333;
+    color: #2C2C2C;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(224, 168, 80, 0.4);
 }
 
 /* --- Hero Section (Home Page) --- */
@@ -168,9 +179,10 @@ img {
   margin: 0 auto 1.5rem auto;
   border: 5px solid #FFFFFF;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  background-color: #E0F4FF;
 }
 .profile-image {
-    background-color: #eee;
+    background-color: #E0F4FF;
 }
 
 .hero-content p {
@@ -208,6 +220,9 @@ img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
+  border: 1px solid #E8E8E8;
+  opacity: 1;
+  visibility: visible;
 }
 
 .service-card:hover {
@@ -426,6 +441,9 @@ img {
   border-left: 5px solid #088395; /* Accent line */
   display: flex;
   flex-direction: column;
+  border: 1px solid #E8E8E8;
+  opacity: 1;
+  visibility: visible;
 }
 
 .testimonial-card blockquote {
@@ -471,7 +489,7 @@ img {
     transform: rotate(45deg);
 }
 .hamburger-menu.is-active span:nth-child(2) {
-    opacity: 0;
+    opacity: 0.3;
     transform: translateX(20px);
 }
 .hamburger-menu.is-active span:nth-child(3) {
@@ -517,8 +535,8 @@ img {
 
 /* --- Fade-in Animation on Scroll --- */
 .service-card, .testimonial-card, .blog-post-preview, .about-content, .contact-form, .hero-content {
-    opacity: 0;
-    transform: translateY(30px);
+    opacity: 1;
+    transform: translateY(0);
     transition: opacity 0.7s ease-out, transform 0.7s ease-out;
 }
 
