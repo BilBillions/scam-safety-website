@@ -515,14 +515,9 @@ img {
 }
 
 
-/* --- Fade-in Animation on Scroll --- */
+/* --- Removed Fade-in Animation on Scroll --- */
+/* Content now displays immediately on page load without requiring .visible class */
 .service-card, .testimonial-card, .blog-post-preview, .about-content, .contact-form, .hero-content {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
-}
-
-.service-card.visible, .testimonial-card.visible, .blog-post-preview.visible, .about-content.visible, .contact-form.visible, .hero-content.visible {
     opacity: 1;
     transform: translateY(0);
 }
